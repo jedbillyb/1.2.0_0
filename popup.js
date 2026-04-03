@@ -1,21 +1,36 @@
 const editor = ace.edit("editor");
+editor.setTheme("ace/theme/chrome"); // light theme
 editor.getSession().setMode("ace/mode/json");
-
-// Dark mode ace theme
-if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    editor.setTheme("ace/theme/monokai");
-}
+editor.setOptions({
+    fontSize: "13px",
+    showPrintMargin: false,
+});
 
 const btnImport = document.getElementById("btn_import");
 const btnExport = document.getElementById("btn_export");
 const btnCopy = document.getElementById("btn_copy");
 const btnDownload = document.getElementById("btn_download");
 const btnFormat = document.getElementById("btn_format");
+const btnClear = document.getElementById("btn_clear");
 const fileInput = document.getElementById("file_input");
 const feedback = document.getElementById("feedback");
 const charCount = document.getElementById("char_count");
 
 btnImport.disabled = true;
+
+function checkTab() {
+    browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        const url = tabs[0].url;
+        const isDesmos = url && url.includes("desmos.com");
+        btnExport.disabled = !isDesmos;
+        btnImport.disabled = !isDesmos || !isValidJson(editor.getValue());
+        if (!isDesmos) {
+            setFeedback("Not on Desmos page", true);
+        } else {
+            updateStats(); // re-enable based on content
+        }
+    });
+}
 
 function isValidJson(str) {
     try { JSON.parse(str); return true; } catch { return false; }
@@ -39,6 +54,7 @@ function updateStats() {
         btnImport.disabled = true;
         setFeedback("✗ Invalid JSON — check syntax", true);
     }
+    checkTab(); // ensure import is disabled if not on desmos
 }
 
 editor.getSession().on("change", updateStats);
@@ -95,6 +111,12 @@ btnFormat.addEventListener("click", () => {
     }
 });
 
+// Clear editor
+btnClear.addEventListener("click", () => {
+    editor.setValue("", -1);
+    setFeedback("✓ Cleared");
+});
+
 // Load from file
 fileInput.addEventListener("change", (e) => {
     const file = e.target.files[0];
@@ -107,8 +129,26 @@ fileInput.addEventListener("change", (e) => {
     reader.readAsText(file);
 });
 
+window.addEventListener("load", () => {
+    // Removed automatic focus to prevent Firefox popup issues
+    // Focus will happen on first user interaction
+});
+
+// Focus editor on first click anywhere in popup
+let focused = false;
+document.addEventListener("click", () => {
+    if (!focused) {
+        editor.focus();
+        focused = true;
+    }
+});
+
 // Keyboard shortcuts
 document.addEventListener("keydown", (e) => {
     if (e.ctrlKey && e.key === "e") { e.preventDefault(); btnExport.click(); }
     if (e.ctrlKey && e.key === "i") { e.preventDefault(); if (!btnImport.disabled) btnImport.click(); }
 });
+
+window.addEventListener("load", checkTab);
+browser.tabs.onActivated.addListener(checkTab);
+browser.tabs.onUpdated.addListener(checkTab);s

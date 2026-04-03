@@ -6,16 +6,6 @@ body {
     color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-    body { background: #1e1e1e; color: #ddd; }
-    h1 { color: #eee; }
-    #feedback { color: #aaa; }
-    #char_count { color: #888; }
-    #file_label { color: #aaa; }
-    #credit a { color: #666; }
-    #credit a:hover { color: #888; }
-}
-
 h1 {
     font-size: 20px;
     font-weight: bold;
@@ -34,8 +24,9 @@ h1 {
 #feedback {
     font-size: 12px;
     min-height: 18px;
-    margin: 4px 0 2px 0;
     text-align: center;
+    position: relative;
+    top: 12px;
 }
 
 #stats-row {
@@ -99,7 +90,8 @@ button:disabled { background-color: #ccc; cursor: default; }
     text-align: center;
     font-size: 11px;
     color: #aaa;
-    margin: 6px 0;
+    margin-top: 10px;
+    padding-top: 8px;
 }
 
 #credit a {
