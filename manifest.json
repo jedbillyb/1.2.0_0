@@ -3,9 +3,13 @@
       "default_popup": "popup.html"
    },
    "browser_specific_settings": {
-      "gecko": {
-         "id": "{2904c92e-079c-424b-bcd4-e1d4ae624249}"
+   "gecko": {
+      "id": "{2904c92e-079c-424b-bcd4-e1d4ae624249}",
+      "data_collection_permissions": {
+         "required": [],
+         "optional": []
       }
+   }
    },
    "content_scripts": [ {
       "js": [ "content.bundle.js" ],
