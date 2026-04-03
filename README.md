@@ -15,7 +15,7 @@ Import/export Desmos graphs as JSON text, for Chrome and Firefox.
 3. Select `manifest.json`
 
 ### Chrome
-Install from the Chrome Web Store *(link)*
+Install from the Chrome Web Store *(link to come soon)*
 
 ## Usage
 1. Open a Desmos graph
@@ -24,4 +24,4 @@ Install from the Chrome Web Store *(link)*
 4. Edit if needed, then hit **Import** to load it back
 
 ## License
-MIT — made by [jedbillyb](https://github.com/jedbillyb)
+MIT - Made with ❤️ by [jedbillyb](https://github.com/jedbillyb)
