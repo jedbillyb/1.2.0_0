@@ -1,0 +1,1 @@
+window.addEventListener("execPageFuncExport",(t=>{const e=Calc.getState();window.dispatchEvent(new CustomEvent("getStateResult",{detail:e}))})),window.addEventListener("execPageFuncImport",(t=>{state=t.detail,Calc.setState(state)}));
