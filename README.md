@@ -4,7 +4,7 @@
 
 # Desmos Text Input/Output Tool
 
-**Import and export Desmos graphs as JSON — in one click.**
+**Import and export Desmos graphs as JSON - in one click.**
 
 [![Firefox](https://img.shields.io/badge/Firefox-Add--on-FF7139?style=flat-square&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/desmos-text-input-output)
 [![Chrome](https://img.shields.io/badge/Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome)](https://chromewebstore.google.com/detail/desmos-text-inputoutput-t/hlfkanpboagfaeakfmfbgbmbbfdgmdic)
@@ -15,16 +15,16 @@
 
 ---
 
-A browser extension for Chrome and Firefox that lets you export any Desmos graph as raw JSON and import it back — useful for backups, sharing, or building on top of someone else's work.
+A browser extension for Chrome and Firefox that lets you export any Desmos graph as raw JSON and import it back - useful for backups, sharing, or building on top of someone else's work.
 
 ## Features
 
-- **Export graphs** — Save any Desmos calculator state as JSON with one click, copied straight to clipboard
-- **Import graphs** — Paste JSON into the editor and load it directly into Desmos
-- **Ace editor** — Syntax-highlighted, validated JSON editor built into the popup
-- **Dark mode** — Full dark theme support
-- **Keyboard shortcuts** — Faster workflow without reaching for the mouse
-- **Cross-browser** — Works on both Chrome and Firefox via Manifest V3
+- **Export graphs** - Save any Desmos calculator state as JSON with one click, copied straight to clipboard
+- **Import graphs** - Paste JSON into the editor and load it directly into Desmos
+- **Ace editor** - Syntax-highlighted, validated JSON editor built into the popup
+- **Dark mode** - Full dark theme support
+- **Keyboard shortcuts** - Faster workflow without reaching for the mouse
+- **Cross-browser** - Works on both Chrome and Firefox via Manifest V3
 
 ---
 
@@ -55,11 +55,11 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/des
 2. Click the extension icon in your browser toolbar
 
 **To export:**
-- Click **Export** — the graph's JSON is copied to your clipboard
+- Click **Export** - the graph's JSON is copied to your clipboard
 
 **To import:**
 - Paste JSON into the editor
-- Click **Import** — the graph loads into Desmos immediately
+- Click **Import** - the graph loads into Desmos immediately
 
 ---
 
@@ -97,7 +97,7 @@ Pull requests are welcome. For larger changes, open an issue first to discuss wh
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT - see [LICENSE](LICENSE) for details.
 
 ---
 
