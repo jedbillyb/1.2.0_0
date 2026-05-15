@@ -7,7 +7,7 @@
 **Import and export Desmos graphs as JSON - in one click.**
 
 [![Firefox](https://img.shields.io/badge/Firefox-Add--on-FF7139?style=flat-square&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/desmos-text-input-output)
-[![Chrome](https://img.shields.io/badge/Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome)](https://chromewebstore.google.com/detail/desmos-text-inputoutput-t/hlfkanpboagfaeakfmfbgbmbbfdgmdic)
+[![Chrome](https://img.shields.io/badge/Chrome-Web_Store-4285F4?style=flat-square&logo=googlechrome)](https://chromewebstore.google.com/detail/desmos-text-inputoutput-t/jlophcoemmgjnoihkdhalpljpkcldmnl)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](./LICENSE)
 [![Manifest](https://img.shields.io/badge/Manifest-V3-brightgreen?style=flat-square)](./manifest.json)
 
