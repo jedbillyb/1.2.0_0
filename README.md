@@ -41,7 +41,7 @@ Install from the [Firefox Add-ons store](https://addons.mozilla.org/en-US/firefo
 
 ### Chrome
 
-Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/desmos-text-inputoutput-t/hlfkanpboagfaeakfmfbgbmbbfdgmdic), or load unpacked for development:
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/desmos-text-inputoutput-t/jlophcoemmgjnoihkdhalpljpkcldmnl), or load unpacked for development:
 
 1. Go to `chrome://extensions/`
 2. Enable **Developer mode**
