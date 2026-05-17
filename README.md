@@ -1,3 +1,4 @@
+<a href="https://jedbillyb.com"><img align="right" src="https://img.shields.io/badge/jedbillyb.com-000?style=for-the-badge&logo=archlinux&logoColor=blue" /></a>
 <div align="center">
 
 <img src="icons/android-chrome-512x512.png" width="128" alt="Desmos Text I/O" />
